@@ -135,11 +135,31 @@ export const MAIN_SCRIPT = (
           width: 100%;
           height: 100%;
       }
+      .wrapper {
+        overflow: hidden;
+        max-width: 100%;
+    }
+      .frame-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */  
+        padding-top: 25px;
+        width: 300%; /* enlarge beyond browser width */
+        left: -100%; /* center */
+    }
+    .frame-container iframe {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+    }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="video" id="player" />
+    <div class="wrapper">
+      <div class="frame-container">
+        <div class="video" id="player" />
+      </div>
     </div>
 
     <script>
