@@ -142,9 +142,9 @@ export const MAIN_SCRIPT = (
       .frame-container {
         position: relative;
         padding-bottom: 56.25%; /* 16:9 */  
-        padding-top: 25px;
-        width: 300%; /* enlarge beyond browser width */
-        left: -100%; /* center */
+//         padding-top: 25px;
+        width: 900%; /* enlarge beyond browser width */
+        left: -400%; /* center */
     }
     .frame-container iframe {
         position: absolute; 
